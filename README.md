@@ -10,6 +10,7 @@ The assembly was written and tested in .Net 4.7.2, ASP.NetCore 2.2 and NetStanda
 [![GitHub forks](https://img.shields.io/github/forks/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/network)
 [![GitHub stars](https://img.shields.io/github/stars/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/SignalRForWPF/master/License.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/SignalRForWPF/badge.svg)](https://snyk.io/test/github/SeppPenner/SignalRForWPF)
 
 ## General stuff:
 * The project `SignalRForWPF.Client` serves as a simple client application for sending messages via the SignalR service.
