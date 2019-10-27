@@ -23,5 +23,6 @@ This can be used in [WinForms](https://docs.microsoft.com/en-us/dotnet/framework
 Change history
 --------------
 
+* **Version 1.0.1.0 (2019-10-27)** : Updated nuget packages, added GitVersionTask.
 * **Version 1.0.0.1 (2019-05-05)** : Updated .Net version to 4.8.
 * **Version 1.0.0.0 (2019-02-17)** : 1.0 release.
