@@ -9,7 +9,7 @@ The assembly was written and tested in .Net 4.8, ASP.NetCore 2.2 and NetStandard
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/issues)
 [![GitHub forks](https://img.shields.io/github/forks/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/network)
 [![GitHub stars](https://img.shields.io/github/stars/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/SeppPenner/SignalRForWPF/master/License.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/SignalRForWPF/master/License.txt)
 [![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/SignalRForWPF/badge.svg)](https://snyk.io/test/github/SeppPenner/SignalRForWPF)
 
 ## General stuff:
