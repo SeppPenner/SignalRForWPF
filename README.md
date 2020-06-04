@@ -3,7 +3,7 @@ SignalRForWPF
 
 SignalRForWPF is an example on how to work with [ASP.Net Core SignalR](https://docs.microsoft.com/de-de/aspnet/core/signalr/introduction?view=aspnetcore-2.2)
 in [WPF](https://docs.microsoft.com/en-us/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs) aplications.
-The assembly was written and tested in .Net 4.8, ASP.NetCore 2.2 and NetStandard 2.0.
+The assembly was written and tested in .Net 4.8, ASP.NetCore 3.1 and NetStandard 2.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/09knyo1qkj6h1s09?svg=true)](https://ci.appveyor.com/project/SeppPenner/signalrforwpf)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/issues)
@@ -23,6 +23,7 @@ This can be used in [WinForms](https://docs.microsoft.com/en-us/dotnet/framework
 Change history
 --------------
 
+* **Version 1.0.2.0 (2020-06-04)** : Updated nuget packages, moved server side project to NetCore 3.1.
 * **Version 1.0.1.0 (2019-10-27)** : Updated nuget packages, added GitVersionTask.
 * **Version 1.0.0.1 (2019-05-05)** : Updated .Net version to 4.8.
 * **Version 1.0.0.0 (2019-02-17)** : 1.0 release.
