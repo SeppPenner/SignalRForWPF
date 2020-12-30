@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SignalRForWPF.Shared\SignalRForWPF.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="License.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
