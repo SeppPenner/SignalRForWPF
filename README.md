@@ -12,7 +12,7 @@ The assembly was written and tested in .Net 5.0.
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/SignalRForWPF/master/License.txt)
 [![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/SignalRForWPF/badge.svg)](https://snyk.io/test/github/SeppPenner/SignalRForWPF)
 
-## General stuff:
+## General stuff
 * The project `SignalRForWPF.Client` serves as a simple client application for sending messages via the SignalR service.
 * The project `SignalRForWPF.Server` provides a SignalR service (and includes a sample website).
 * The project `SignalRForWPF.Shared` contains the shared model classes of client and server.
