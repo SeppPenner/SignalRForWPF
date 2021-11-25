@@ -3,7 +3,6 @@ SignalRForWPF
 
 SignalRForWPF is an example on how to work with [ASP.Net Core SignalR](https://docs.microsoft.com/de-de/aspnet/core/signalr/introduction?view=aspnetcore-2.2)
 in [WPF](https://docs.microsoft.com/en-us/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs) aplications.
-The assembly was written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/09knyo1qkj6h1s09?svg=true)](https://ci.appveyor.com/project/SeppPenner/signalrforwpf)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/SignalRForWPF.svg)](https://github.com/SeppPenner/SignalRForWPF/issues)

@@ -12,7 +12,6 @@ namespace SignalRForWPF.Server
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
@@ -76,7 +75,7 @@ namespace SignalRForWPF.Server
                     options.MinimumSameSitePolicy = SameSiteMode.None;
                 });
 
-            services.AddMvc(routes => routes.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddMvc(routes => routes.EnableEndpointRouting = false);
             services.AddSignalR();
         }
     }
