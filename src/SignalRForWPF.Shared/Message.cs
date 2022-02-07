@@ -17,11 +17,11 @@ namespace SignalRForWPF.Shared
         /// <summary>
         /// Gets or sets the user.
         /// </summary>
-        public string User { get; set; }
+        public string User { get; set; } = string.Empty;
 
         /// <summary>
         /// Gets or sets the message text.
         /// </summary>
-        public string MessageText { get; set; }
+        public string MessageText { get; set; } = string.Empty;
     }
 }

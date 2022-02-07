@@ -23,7 +23,7 @@ namespace SignalRForWPF.Server.Pages
         /// <summary>
         /// Gets or sets the request identifier.
         /// </summary>
-        public string RequestId { get; set; }
+        public string RequestId { get; set; } = string.Empty;
 
         /// <summary>
         /// A value indicating whether the request identifier is shown or not.
@@ -33,7 +33,6 @@ namespace SignalRForWPF.Server.Pages
         /// <summary>
         /// Handles the get method.
         /// </summary>
-        // ReSharper disable once UnusedMember.Global
         public void OnGet()
         {
             this.RequestId = Activity.Current?.Id ?? this.HttpContext.TraceIdentifier;

@@ -46,12 +46,12 @@ namespace SignalRForWPF.Client
         /// <summary>
         /// The received text.
         /// </summary>
-        private string receivedText;
+        private string receivedText = string.Empty;
 
         /// <summary>
         /// The sent text.
         /// </summary>
-        private string sentText;
+        private string sentText = string.Empty;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindow"/> class.
@@ -84,7 +84,7 @@ namespace SignalRForWPF.Client
         /// <summary>
         /// Handles the property changed event.
         /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         /// <summary>
         /// Gets or sets the received text.
@@ -116,7 +116,7 @@ namespace SignalRForWPF.Client
         /// Handles the property changed event.
         /// </summary>
         /// <param name="propertyName">The property name.</param>
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
