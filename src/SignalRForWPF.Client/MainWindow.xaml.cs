@@ -34,7 +34,7 @@ namespace SignalRForWPF.Client
         /// </summary>
         private readonly string clientId = BitConverter
             .ToString(
-                new SHA256Managed().ComputeHash(
+                SHA256.Create().ComputeHash(
                     Encoding.UTF8.GetBytes(new Random().NextDouble().ToString(CultureInfo.InvariantCulture))))
             .Replace("-", string.Empty).ToLowerInvariant();
 
