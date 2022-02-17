@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Message.cs" company="Hämmer Electronics">
 //   Copyright (c) All rights reserved.
 // </copyright>
@@ -7,21 +7,20 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace SignalRForWPF.Shared
+namespace SignalRForWPF.Shared;
+
+/// <summary>
+/// The message class.
+/// </summary>
+public class Message
 {
     /// <summary>
-    /// The message class.
+    /// Gets or sets the user.
     /// </summary>
-    public class Message
-    {
-        /// <summary>
-        /// Gets or sets the user.
-        /// </summary>
-        public string User { get; set; } = string.Empty;
+    public string User { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Gets or sets the message text.
-        /// </summary>
-        public string MessageText { get; set; } = string.Empty;
-    }
+    /// <summary>
+    /// Gets or sets the message text.
+    /// </summary>
+    public string MessageText { get; set; } = string.Empty;
 }

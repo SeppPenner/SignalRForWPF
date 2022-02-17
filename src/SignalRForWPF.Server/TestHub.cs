@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="TestHub.cs" company="Hämmer Electronics">
 //   Copyright (c) All rights reserved.
 // </copyright>
@@ -7,30 +7,21 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace SignalRForWPF.Server
+namespace SignalRForWPF.Server;
+
+/// <summary>
+/// The test hub class.
+/// </summary>
+public class TestHub : Hub
 {
-    using System;
-    using System.Threading.Tasks;
-
-    using Microsoft.AspNetCore.SignalR;
-
-    using SignalRForWPF.Shared;
-
     /// <summary>
-    /// The test hub class.
+    /// Sends a message.
     /// </summary>
-    public class TestHub : Hub
+    /// <param name="message">The message.</param>
+    /// <returns>A <see cref="Task"/> representing any asynchronous operation.</returns>
+    public async Task SendMessage(Message message)
     {
-        /// <summary>
-        /// Sends a message.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <returns>A <see cref="Task"/> representing any asynchronous operation.</returns>
-        // ReSharper disable once UnusedMember.Global
-        public async Task SendMessage(Message message)
-        {
-            Console.WriteLine($"Received message {message.MessageText} from client {message.User}");
-            await this.Clients.All.SendAsync("ReceiveMessage", message);
-        }
+        Console.WriteLine($"Received message {message.MessageText} from client {message.User}");
+        await this.Clients.All.SendAsync("ReceiveMessage", message);
     }
 }
