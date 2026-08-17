@@ -48,10 +48,14 @@ public class Startup
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseCookiePolicy();
+        app.UseRouting();
 
-        app.UseEndpoints(routes => { routes.MapHub<TestHub>("/testHub"); });
-
-        app.UseMvc();
+        app.UseEndpoints(
+            endpoints =>
+            {
+                endpoints.MapRazorPages();
+                endpoints.MapHub<TestHub>("/testHub");
+            });
     }
 
     /// <summary>
@@ -63,12 +67,12 @@ public class Startup
         services.Configure<CookiePolicyOptions>(
             options =>
             {
-                    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                    options.CheckConsentNeeded = context => true;
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-        services.AddMvc(routes => routes.EnableEndpointRouting = false);
+        services.AddRazorPages();
         services.AddSignalR();
     }
 }

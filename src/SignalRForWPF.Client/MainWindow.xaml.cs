@@ -123,7 +123,8 @@ public partial class MainWindow : INotifyPropertyChanged
         }
         catch (Exception ex)
         {
-            MessageBox.Show(ex.StackTrace, ex.Message, MessageBoxButton.OK, MessageBoxImage.Error);
+            var text = $"{ex.Message}{Environment.NewLine}{Environment.NewLine}{ex.StackTrace}";
+            MessageBox.Show(text, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }

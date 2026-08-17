@@ -20,7 +20,7 @@ public class Program
     /// <param name="args">The args.</param>
     public static void Main(string[] args)
     {
-        CreateHostBuilder(args).Build().RunAsync();
+        CreateHostBuilder(args).Build().Run();
     }
 
     /// <summary>
